@@ -23,7 +23,7 @@ const EditInventory = () => {
     }
 
     const findItem = async () => {
-        await fetch('http://localhost:4000/findinventory', {
+        await fetch('https://shopfloorcontrolbackend.onrender.com/findinventory', {
             method: 'POST',
             headers: {
                 Accept: "application.json",
@@ -51,7 +51,7 @@ const EditInventory = () => {
     }
 
     const editItem = async () => {
-        await fetch('http://localhost:4000/editinventory', {
+        await fetch('https://shopfloorcontrolbackend.onrender.com/editinventory', {
             method: 'POST',
             headers: {
                 Accept: "application.json",
@@ -78,7 +78,7 @@ const EditInventory = () => {
     }
 
     const removeItem = async () => {
-        await fetch('http://localhost:4000/removeinventory', {
+        await fetch('https://shopfloorcontrolbackend.onrender.com/removeinventory', {
             method: 'POST',
             headers: {
                 Accept: "application.json",

@@ -23,7 +23,7 @@ const EditProgram = () => {
     }
 
     const findProgram = async () => {
-        await fetch('http://localhost:4000/findprogram', {
+        await fetch('https://shopfloorcontrolbackend.onrender.com/findprogram', {
             method: 'POST',
             headers: {
                 Accept: "application.json",
@@ -51,7 +51,7 @@ const EditProgram = () => {
     }
 
     const editProgram = async () => {
-        await fetch('http://localhost:4000/editprogram', {
+        await fetch('https://shopfloorcontrolbackend.onrender.com/editprogram', {
             method: 'POST',
             headers: {
                 Accept: "application.json",
@@ -78,7 +78,7 @@ const EditProgram = () => {
     }
 
     const removeProgram = async () => {
-        await fetch('http://localhost:4000/removeprogram', {
+        await fetch('https://shopfloorcontrolbackend.onrender.com/removeprogram', {
             method: 'POST',
             headers: {
                 Accept: "application.json",

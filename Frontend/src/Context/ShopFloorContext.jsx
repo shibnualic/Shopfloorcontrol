@@ -14,22 +14,22 @@ const ShopContextProvider = (props) => {
     const [isFunctionExecuted, setIsFunctionExecuted] = useState(false);
 
     useEffect(() => {
-        fetch('http://localhost:4000/allinventory', {
+        fetch('https://shopfloorcontrolbackend.onrender.com/allinventory', {
             method: 'GET'
         }).then((response) => response.json()).then((data) => {
             setInventory_item(data);
         })
-        fetch('http://localhost:4000/allprogram', {
+        fetch('https://shopfloorcontrolbackend.onrender.com/allprogram', {
             method: 'GET'
         }).then((response) => response.json()).then((data) => {
             setAllProgram(data);
         })
-        fetch('http://localhost:4000/allproduct', {
+        fetch('https://shopfloorcontrolbackend.onrender.com/allproduct', {
             method: 'GET'
         }).then((response) => response.json()).then((data) => {
             setAllProduct(data);
         })
-        fetch('http://localhost:4000/allorder', {
+        fetch('https://shopfloorcontrolbackend.onrender.com/allorder', {
             method: 'GET'
         }).then((response) => response.json()).then((data) => {
             setAllOrder(data);

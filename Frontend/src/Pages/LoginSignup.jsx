@@ -20,7 +20,7 @@ const LoginSignup = () => {
 
         let responseData;
 
-        await fetch('http://localhost:4000/login', {
+        await fetch('https://shopfloorcontrolbackend.onrender.com/login', {
             method: 'POST',
             headers: {
                 "Accept": 'application/form-data',
@@ -44,7 +44,7 @@ const LoginSignup = () => {
 
         let responseData;
 
-        await fetch('http://localhost:4000/signup', {
+        await fetch('https://shopfloorcontrolbackend.onrender.com/signup', {
             method: 'POST',
             headers: {
                 "Accept": 'application/form-data',

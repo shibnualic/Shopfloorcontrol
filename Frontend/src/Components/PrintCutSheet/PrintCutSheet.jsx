@@ -58,7 +58,7 @@ const PrintCutSheet = () => {
                 item_id: item.componentId,
                 stock: oldStock.stock - ordertoPrint.quantity * item.quantity
             }
-            await fetch('http://localhost:4000/editinventory', {
+            await fetch('https://shopfloorcontrolbackend.onrender.com/editinventory', {
                 method: 'POST',
                 headers: {
                     Accept: "application.json",
@@ -68,7 +68,7 @@ const PrintCutSheet = () => {
             })
         })
 
-        await fetch('http://localhost:4000/removeorder', {
+        await fetch('https://shopfloorcontrolbackend.onrender.com/removeorder', {
             method: 'POST',
             headers: {
                 Accept: "application.json",

@@ -30,7 +30,7 @@ const AddBop = () => {
                 alert("program already exist in BOP");
             } else {
                 productToAddBop.bop.push(bopPartToAdd);
-                await fetch('http://localhost:4000/editbop', {
+                await fetch('https://shopfloorcontrolbackend.onrender.com/editbop', {
                     method: 'POST',
                     headers: {
                         Accept: "application.json",
@@ -54,7 +54,7 @@ const AddBop = () => {
 
         productToAddBop.bop = productToAddBop.bop.filter(item => item.program_id !== id);
 
-        await fetch('http://localhost:4000/editBop', {
+        await fetch('https://shopfloorcontrolbackend.onrender.com/editBop', {
             method: 'POST',
             headers: {
                 Accept: "application.json",

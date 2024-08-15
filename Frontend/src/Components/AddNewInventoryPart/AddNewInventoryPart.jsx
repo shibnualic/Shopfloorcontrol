@@ -29,7 +29,7 @@ const AddNewInventoryPart = () => {
         if (index !== -1) {
             alert("Inventory part already exist")
         } else {
-            await fetch('http://localhost:4000/addinventory', {
+            await fetch('https://shopfloorcontrolbackend.onrender.com/addinventory', {
                 method: 'POST',
                 headers: {
                     Accept: "application.json",

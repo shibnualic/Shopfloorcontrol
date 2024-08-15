@@ -29,7 +29,7 @@ const AddNewProgram = () => {
         if (index !== -1) {
             alert("Program name already exist")
         } else {
-            await fetch('http://localhost:4000/addprogram', {
+            await fetch('https://shopfloorcontrolbackend.onrender.com/addprogram', {
                 method: 'POST',
                 headers: {
                     Accept: "application.json",

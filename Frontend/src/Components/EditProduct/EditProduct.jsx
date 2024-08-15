@@ -21,7 +21,7 @@ const EditProduct = () => {
     }
 
     const findItem = async () => {
-        await fetch('http://localhost:4000/findproduct', {
+        await fetch('https://shopfloorcontrolbackend.onrender.com/findproduct', {
             method: 'POST',
             headers: {
                 Accept: "application.json",
@@ -46,7 +46,7 @@ const EditProduct = () => {
     }
 
     const editItem = async () => {
-        await fetch('http://localhost:4000/editproduct', {
+        await fetch('https://shopfloorcontrolbackend.onrender.com/editproduct', {
             method: 'POST',
             headers: {
                 Accept: "application.json",
@@ -71,7 +71,7 @@ const EditProduct = () => {
     }
 
     const removeItem = async () => {
-        await fetch('http://localhost:4000/removeproduct', {
+        await fetch('https://shopfloorcontrolbackend.onrender.com/removeproduct', {
             method: 'POST',
             headers: {
                 Accept: "application.json",

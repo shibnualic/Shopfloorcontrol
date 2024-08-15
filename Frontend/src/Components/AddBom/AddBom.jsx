@@ -36,7 +36,7 @@ const AddBom = () => {
             }
 
 
-            await fetch('http://localhost:4000/editbom', {
+            await fetch('https://shopfloorcontrolbackend.onrender.com/editbom', {
                 method: 'POST',
                 headers: {
                     Accept: "application.json",
@@ -60,7 +60,7 @@ const AddBom = () => {
 
         productToAddBom.bom = productToAddBom.bom.filter(item => item.componentId !== id);
 
-        await fetch('http://localhost:4000/editbom', {
+        await fetch('https://shopfloorcontrolbackend.onrender.com/editbom', {
             method: 'POST',
             headers: {
                 Accept: "application.json",

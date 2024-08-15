@@ -24,7 +24,7 @@ const AddOrder = () => {
 
     const addOrder = async () => {
 
-        await fetch('http://localhost:4000/addorder', {
+        await fetch('https://shopfloorcontrolbackend.onrender.com/addorder', {
             method: 'POST',
             headers: {
                 Accept: "application.json",
