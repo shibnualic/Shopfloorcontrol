@@ -1,9 +1,10 @@
-const port = 4000;
+
 const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
 const cors = require('cors');
 const jwt = require('jsonwebtoken');
+require('dotenv').config();
 
 
 
@@ -13,7 +14,7 @@ app.use(cors());
 
 
 
-mongoose.connect("mongodb+srv://shibnualic:2506190684@cluster0.8n9z3mn.mongodb.net/shopfloorcontrol");
+mongoose.connect(process.env.MONGODB_URL);
 
 app.get("/", (req, res) => {
     res.send("Express server is running")
@@ -570,9 +571,9 @@ app.post("/login", async (req, res) => {
 
 
 
-app.listen(port, (error) => {
+app.listen(process.env.PORT, (error) => {
     if (!error) {
-        console.log("server running on port" + port)
+        console.log("server running on port"+ process.env.PORT)
     } else {
         console.log("Error:" + error)
     }
